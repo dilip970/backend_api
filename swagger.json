@@ -1,0 +1,1817 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Pillbro",
+    "description": "An Online Doctor Consulation with medical products and services",
+    "version": "1.0.0"
+  },
+  "host": "128.199.28.150:5000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/generate-api-documentation": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/roles": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/register": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_role_id": {
+                  "example": "any"
+                },
+                "ubit_category_id": {
+                  "example": "any"
+                },
+                "ubit_country_id": {
+                  "example": "any"
+                },
+                "ubit_state_id": {
+                  "example": "any"
+                },
+                "ubit_district_id": {
+                  "example": "any"
+                },
+                "ubit_owner_name": {
+                  "example": "any"
+                },
+                "ubit_owner_file1": {
+                  "example": "any"
+                },
+                "ubit_owner_file2": {
+                  "example": "any"
+                },
+                "ubit_establishment_name": {
+                  "example": "any"
+                },
+                "ubit_license_file1": {
+                  "example": "any"
+                },
+                "ubit_license_file2": {
+                  "example": "any"
+                },
+                "ubit_full_address": {
+                  "example": "any"
+                },
+                "ubit_email": {
+                  "example": "any"
+                },
+                "ubit_mobile_number": {
+                  "example": "any"
+                },
+                "ubit_password": {
+                  "example": "any"
+                },
+                "ubit_description": {
+                  "example": "any"
+                },
+                "ubit_experience_in_years": {
+                  "example": "any"
+                },
+                "ubit_consultation_fee": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/login": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_email": {
+                  "example": "any"
+                },
+                "ubit_password": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change-password": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "ubit_old_password": {
+                  "example": "any"
+                },
+                "ubit_new_password": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-users-by-role-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_role_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-user-profile-by-user-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-user-by-user-id": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "ubit_role_id": {
+                  "example": "any"
+                },
+                "ubit_role_id>5": {
+                  "example": "any"
+                },
+                "ubit_category_id": {
+                  "example": "any"
+                },
+                "ubit_country_id": {
+                  "example": "any"
+                },
+                "ubit_state_id": {
+                  "example": "any"
+                },
+                "ubit_district_id": {
+                  "example": "any"
+                },
+                "ubit_owner_name": {
+                  "example": "any"
+                },
+                "ubit_owner_file1": {
+                  "example": "any"
+                },
+                "ubit_owner_file2": {
+                  "example": "any"
+                },
+                "ubit_establishment_name": {
+                  "example": "any"
+                },
+                "ubit_license_file1": {
+                  "example": "any"
+                },
+                "ubit_license_file2": {
+                  "example": "any"
+                },
+                "ubit_full_address": {
+                  "example": "any"
+                },
+                "ubit_email": {
+                  "example": "any"
+                },
+                "ubit_mobile_number": {
+                  "example": "any"
+                },
+                "ubit_description": {
+                  "example": "any"
+                },
+                "ubit_experience_in_years": {
+                  "example": "any"
+                },
+                "ubit_consultation_fee": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change-user-status": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "ubit_user_id": {
+                  "example": "any"
+                },
+                "ubit_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/doctor-consulation-timings": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-users-by-category-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_category_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/countries": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/states": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "lsm_country_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/districts": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ldm_state_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-role-based-category": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "rbcm_role_id": {
+                  "example": "any"
+                },
+                "rbcm_name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-role-based-category-by-id/{rbcm_id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "rbcm_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-role-based-category": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "rbcm_id": {
+                  "example": "any"
+                },
+                "rbcm_role_id": {
+                  "example": "any"
+                },
+                "rbcm_name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change-role-based-category-status/{rbcm_id}": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "rbcm_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "rbcm_id": {
+                  "example": "any"
+                },
+                "rbcm_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-role-based-categories": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "rbcm_role_id": {
+                  "example": "any"
+                },
+                "rbcm_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-pharmacy-product": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "tpp_category_id": {
+                  "example": "any"
+                },
+                "tpp_name": {
+                  "example": "any"
+                },
+                "tpp_image1": {
+                  "example": "any"
+                },
+                "tpp_image2": {
+                  "example": "any"
+                },
+                "tpp_discount_percentage": {
+                  "example": "any"
+                },
+                "tpp_price": {
+                  "example": "any"
+                },
+                "tpp_description": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-pharmacy-products-by-category-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tpp_category_id": {
+                  "example": "any"
+                },
+                "tpp_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-pharmacy-product-by-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tpp_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-pharmacy-product-by-id": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "tpp_id": {
+                  "example": "any"
+                },
+                "tpp_category_id": {
+                  "example": "any"
+                },
+                "tpp_name": {
+                  "example": "any"
+                },
+                "tpp_image1": {
+                  "example": "any"
+                },
+                "tpp_image2": {
+                  "example": "any"
+                },
+                "tpp_discount_percentage": {
+                  "example": "any"
+                },
+                "tpp_price": {
+                  "example": "any"
+                },
+                "tpp_description": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change-pharmacy-product-status": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "tpp_id": {
+                  "example": "any"
+                },
+                "tpp_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-web-blog-category": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "wbc_name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-web-blog-categories": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "wbc_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-blog-category-by-id/{wbc_id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "wbc_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-blog-category-by-id": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "wbc_id": {
+                  "example": "any"
+                },
+                "wbc_name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change-blog-category-status": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "wbc_id": {
+                  "example": "any"
+                },
+                "wbc_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-blog-information": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "wbim_category_id": {
+                  "example": "any"
+                },
+                "wbim_title": {
+                  "example": "any"
+                },
+                "wbim_image1": {
+                  "example": "any"
+                },
+                "wbim_image2": {
+                  "example": "any"
+                },
+                "wbim_content": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/blog-list": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "wbim_category_id": {
+                  "example": "any"
+                },
+                "wbim_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-blog-information-by-id/{wbim_id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "wbim_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-blog-information-by-id": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "wbim_id": {
+                  "example": "any"
+                },
+                "wbim_category_id": {
+                  "example": "any"
+                },
+                "wbim_title": {
+                  "example": "any"
+                },
+                "wbim_image1": {
+                  "example": "any"
+                },
+                "wbim_image2": {
+                  "example": "any"
+                },
+                "wbim_content": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change-blog-information-status": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "wbim_id": {
+                  "example": "any"
+                },
+                "wbim_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-testimonial": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "t_name": {
+                  "example": "any"
+                },
+                "t_designation": {
+                  "example": "any"
+                },
+                "t_description": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-testimonials": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "t_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-testimonial-by-id/{t_id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "t_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-testimonial-by-id": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "t_id": {
+                  "example": "any"
+                },
+                "t_name": {
+                  "example": "any"
+                },
+                "t_designation": {
+                  "example": "any"
+                },
+                "t_description": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change_testimonial_status": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "t_id": {
+                  "example": "any"
+                },
+                "t_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-diagnostics-lab-test": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "dltm_category_id": {
+                  "example": "any"
+                },
+                "dltm_name": {
+                  "example": "any"
+                },
+                "dltm_image1": {
+                  "example": "any"
+                },
+                "dltm_image2": {
+                  "example": "any"
+                },
+                "dltm_description": {
+                  "example": "any"
+                },
+                "dltm_price": {
+                  "example": "any"
+                },
+                "dltm_discount": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-diagnostics-lab-tests-by-category-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dltm_category_id": {
+                  "example": "any"
+                },
+                "dltm_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-diagnostic-lab-test-by-id/{dltm_id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "dltm_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-diagnostic-lab-test": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "dltm_id": {
+                  "example": "any"
+                },
+                "dltm_name": {
+                  "example": "any"
+                },
+                "dltm_image1": {
+                  "example": "any"
+                },
+                "dltm_image2": {
+                  "example": "any"
+                },
+                "dltm_description": {
+                  "example": "any"
+                },
+                "dltm_price": {
+                  "example": "any"
+                },
+                "dltm_discount": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/change-diagnostic-lab-test-status": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "dltm_id": {
+                  "example": "any"
+                },
+                "dltm_status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/add-item-to-cart": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "ucm_role_id": {
+                  "example": "any"
+                },
+                "ucm_item_id": {
+                  "example": "any"
+                },
+                "ucm_quantity": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/increment-cart-item": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "ucm_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/decrement-cart-item": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "ucm_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/delete-cart-item": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "ucm_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/cart-list": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-user-delivery-address": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "udai_user_id": {
+                  "example": "any"
+                },
+                "udai_country_id": {
+                  "example": "any"
+                },
+                "udai_state_id": {
+                  "example": "any"
+                },
+                "udai_district_id": {
+                  "example": "any"
+                },
+                "udai_name": {
+                  "example": "any"
+                },
+                "udai_mobile": {
+                  "example": "any"
+                },
+                "udai_full_address": {
+                  "example": "any"
+                },
+                "udai_pincode": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-user-delivery-addresses-by-user-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-user-delivery-address-by-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "udai_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/update-user-delivery-address-by-id": {
+      "patch": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "udai_id": {
+                  "example": "any"
+                },
+                "udai_country_id": {
+                  "example": "any"
+                },
+                "udai_state_id": {
+                  "example": "any"
+                },
+                "udai_district_id": {
+                  "example": "any"
+                },
+                "udai_name": {
+                  "example": "any"
+                },
+                "udai_mobile": {
+                  "example": "any"
+                },
+                "udai_full_address": {
+                  "example": "any"
+                },
+                "udai_pincode": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/delete-user-delivery-address-by-id/{udai_id}": {
+      "delete": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "udai_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/place-order": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "udai_id": {
+                  "example": "any"
+                },
+                "uoim_order_type": {
+                  "example": "any"
+                },
+                "uoim_razorpay_order_id": {
+                  "example": "any"
+                },
+                "uoim_razorpay_payment_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/save-doctor-consulation-timings": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "dct_status": {
+                  "example": "any"
+                },
+                "dct_time": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/patient-consulation": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "uct_consultation_id": {
+                  "example": "any"
+                },
+                "uct_google_meet_link": {
+                  "example": "any"
+                },
+                "uct_razorpay_order_id": {
+                  "example": "any"
+                },
+                "uct_razorpay_payment_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/create-new-razorpay-order-id": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ubit_id": {
+                  "example": "any"
+                },
+                "ubit_token": {
+                  "example": "any"
+                },
+                "amount": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/upload-medicine-data": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "role_category_id": {
+                  "example": "any"
+                },
+                "category_id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/search-medicine": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "medicine": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/product-details/{product_id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "product_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/product-categories": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/productsbycatid/{category_id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "category_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "definitions": {}
+}
